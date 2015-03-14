@@ -1,0 +1,32 @@
+# Quiz 2
+
+q2_1 <- c(2/7, 3/7, 6/7)
+q2_2 <- c(6/7, 2/7, -3/7)
+
+# Codes to check unitvector, has to be 1: 
+sqrt(sum(q2_col1^2))
+sqrt(sum(q2_col2^2))
+
+# Codes to check orthogonal, has to be 0:
+q2_1 %*% q2_2
+
+# Manual calculation
+# 2/7*x + 3/7*y + 6/7*z = 0
+# 6/7*x + 2/7*y - 3/7*z = 0
+# multiply by 7
+# 2x + 3y + 6z = 0
+# 6x + 2y - 3z = 0
+# multiply second by 2
+# 2x + 3y + 6z = 0
+# 12x + 4y - 6z = 0
+# sum
+# 14x + 7y = 0
+# div by 7 and redistribute
+# 2x = -y
+# insert into first one
+# -y + 3y + 6z = 0
+# 2y = -6z
+# y = -3z 
+# insert into second one
+# 6x -4x -3z = 0
+# 2x = 3z
